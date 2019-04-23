@@ -155,18 +155,20 @@ section {
   flex-direction: row;
   margin: 20px;
   min-height: 400px;
-  width: 60%;
+  overflow: hidden;
+  width: 65%;
 }
 .cardimg-slid img {
   flex-wrap: wrap;
-  width: 74%;
   height: auto;
-  object-fit: cover;
-  margin-left: 20%;
+  object-fit: contain;
+  width: 100%;
+  margin-top: 126px;
 }
 .conlid {
   position: relative;
-  width: 5%;
+  padding: 20px;
+  width: 70%;
 }
 .conlid p {
   margin-top: 12px;
@@ -175,7 +177,6 @@ section {
 }
 .conlid h3 {
   font-size: 50px;
-  display: inline-block;
 }
 .conlid h6 {
   font-size: 40px;
@@ -183,7 +184,7 @@ section {
   margin-top: 20px;
 }
 .conlid .sub-title {
-  font-size: 25px;
+  font-size: 30px;
   line-height: 120%;
 }
 .conlid .pop {
@@ -204,8 +205,8 @@ section {
 .conlid .pop img {
   width: 16px;
   position: absolute;
-  top: 48px;
-  left: 12px;
+  top: -62px;
+  left: 32px;
 }
 .card-popul {
   margin: 20px 14px;
@@ -452,6 +453,49 @@ footer {
   float: right;
   font-size: 10pt;
 }
+@media screen and (max-width: 1290px) {
+  .cardimg-slid {
+    display: flex;
+    background: white;
+    flex-direction: row;
+    margin: 20px;
+    min-height: 400px;
+    overflow: hidden;
+    width: 65%;
+  }
+  .cardimg-slid img {
+    flex-wrap: wrap;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+    margin-top: 80px;
+  }
+  .conlid {
+    width: 22%;
+    padding: 10px;
+  }
+  .conlid .pop {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #ffeaf1;
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .conlid .pop p {
+    margin-left: 50px;
+    margin-top: 7px;
+    color: #f878b4;
+  }
+  .conlid .pop img {
+    width: 16px;
+    position: absolute;
+    top: -21px;
+    left: 23px;
+  }
+}
 @media screen and (max-width: 1190px) {
   .mod-headlog {
     opacity: 0;
@@ -526,13 +570,13 @@ footer {
     flex-direction: row;
     margin: 20px;
     min-height: 400px;
-    object-fit: cover;
   }
   .cardimg-slid img {
     background-repeat: no-repeat;
     background-size: cover;
     flex-wrap: wrap;
     height: auto;
+    object-fit: cover;
   }
   .cont-cardpop {
     width: 100%;
@@ -731,10 +775,18 @@ footer {
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .cardimg-slid .conlid {
+    position: relative;
+    padding: 20px;
+    width: 15%;
+  }
+  .cardimg-slid .conlid .pop img {
+    top: -14px;
+    left: 32px;
+  }
   .cardimg-slid img {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 73%;
     height: auto;
   }
   .cont-cardpop {
@@ -877,17 +929,19 @@ footer {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  .cardimg-slid img {
-    width: 75%;
+  .cardimg-slid .conlid {
+    position: relative;
+    padding: 20px;
+    width: 15%;
   }
   .cardimg-slid h3 {
-    font-size: 30px;
+    font-size: 23px;
   }
   .cardimg-slid h6 {
-    font-size: 30px;
+    font-size: 23px;
   }
   .cardimg-slid .sub-title {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 120%;
     margin-bottom: 36px;
   }
