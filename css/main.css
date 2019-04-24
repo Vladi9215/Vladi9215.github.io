@@ -44,7 +44,7 @@ span {
 }
 .dev {
   width: 100%;
-  height: 130px;
+  height: 168px;
 }
 .mod-mrr {
   margin-right: 10px;
@@ -163,7 +163,7 @@ section {
   height: auto;
   object-fit: contain;
   width: 100%;
-  margin-top: 126px;
+  margin-top: 146px;
 }
 .conlid {
   position: relative;
@@ -1126,5 +1126,202 @@ footer {
     font-size: 30px;
     margin: 40px 30px;
     font-size: 22px;
+  }
+}
+.maincont-catal {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1300px;
+  justify-content: space-between;
+}
+.right-bar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-bar .cont-cardcatal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-catal {
+  padding: 25px;
+  margin: 20px;
+  background: white;
+  flex-wrap: wrap ;
+  width: 20%;
+}
+.card-catal > img {
+  width: 100%;
+}
+p {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #4f5964;
+}
+h6 {
+  font-size: 30px;
+  color: #259ff0;
+  margin-top: 20px;
+}
+.catalog {
+  display: flex;
+  width: 97%;
+  background: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.catalog select {
+  margin: 20px;
+  border-radius: 2px;
+  padding: 9px 12px;
+  cursor: pointer;
+  width: 220px;
+  color: #2a8faf;
+  font-weight: bold;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-bar {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  background: #fffcfc;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .maincont-catal {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .right-bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .right-bar .cont-cardcatal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-catal {
+    margin: 10px;
+    background: white;
+    flex-wrap: wrap ;
+    padding: 5px;
+  }
+  .card-catal > img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #4f5964;
+  }
+  h6 {
+    font-size: 20px;
+    color: #259ff0;
+    margin-top: 0px;
+  }
+}
+.input-list {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 15px;
+  padding: 5px;
+}
+.input-list .mmod-mt {
+  margin-top: 20px;
+}
+.input-list:first-child {
+  margin-top: 30px;
+}
+.input-list input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+  font-family: "Calibri";
+  font-size: 14px;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 100%;
+  cursor: pointer;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.input-list input[type="checkbox"]:checked {
+  background: url(../imgs/checked.svg) #149dec;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+.input-list .chec {
+  display: flex;
+  justify-content: space-between;
+}
+.input-list .chec label {
+  font-size: 13px;
+}
+@media screen and (max-width: 726px) {
+  .right-bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .right-bar .cont-cardcatal {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .card-catal {
+    background: white;
+    flex-wrap: wrap ;
+    width: 94%;
+  }
+  .card-catal > img {
+    width: 100%;
+  }
+  p {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #4f5964;
+  }
+  h6 {
+    font-size: 30px;
+    color: #259ff0;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-catal {
+    background: white;
+    flex-wrap: wrap ;
+    width: 73%;
+    margin-left: 30px;
+  }
+  .card-catal > img {
+    width: 100%;
+  }
+  p {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #4f5964;
+  }
+  h6 {
+    font-size: 30px;
+    color: #259ff0;
+    margin-top: 20px;
   }
 }
