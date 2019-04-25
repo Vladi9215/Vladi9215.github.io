@@ -1128,6 +1128,9 @@ footer {
     font-size: 22px;
   }
 }
+h1 {
+  margin-left: 10px;
+}
 .maincont-catal {
   display: flex;
   flex-direction: column;
@@ -1190,7 +1193,6 @@ h6 {
   display: flex;
   flex-direction: column;
   background: #fffcfc;
-  margin: 0 auto;
 }
 @media screen and (max-width: 900px) {
   .maincont-catal {
@@ -1284,11 +1286,14 @@ h6 {
     flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
+    width: 94%;
   }
   .card-catal {
     background: white;
     flex-wrap: wrap ;
-    width: 94%;
+    width: 96%;
+    padding: 0px;
+    margin: 10px;
   }
   .card-catal > img {
     width: 100%;
@@ -1304,12 +1309,20 @@ h6 {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
+  .cat {
+    flex-direction: column;
+  }
+  .cont-cardcatal {
+    width: 100%;
+  }
   .card-catal {
+    margin: 0 auto;
     background: white;
     flex-wrap: wrap ;
-    width: 73%;
-    margin-left: 30px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 7px;
   }
   .card-catal > img {
     width: 100%;

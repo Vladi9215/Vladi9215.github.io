@@ -1299,7 +1299,9 @@ span{
 
 
 
-
+ h1{
+      margin-left: 10px;
+    }
 
   .maincont-catal{
     display: flex;
@@ -1307,6 +1309,7 @@ span{
     margin: 0 auto;
     max-width: 1300px;
     justify-content: space-between;
+   
      
   }
   
@@ -1376,7 +1379,6 @@ span{
     display: flex;
     flex-direction: column;
     background: rgb(255, 252, 252);
-    margin: 0 auto;
 
     
   }
@@ -1493,6 +1495,7 @@ span{
       flex-direction: column;
       margin: 0 auto;
       justify-content: space-between;
+      width: 94%;
       }  
     }
     
@@ -1500,7 +1503,9 @@ span{
    
       background: white;  
       flex-wrap:wrap ;
-      width: 94%;
+      width: 96%;
+      padding: 0px;
+      margin: 10px;;
       &>img{
         width: 100%;
       }
@@ -1523,14 +1528,20 @@ span{
     }
   }
 
-  @media screen and (max-width:500px){ 
-    
+  @media screen and (max-width:480px){ 
+    .cat{
+      flex-direction: column;
+    }
+    .cont-cardcatal{
+      width: 100%;
+    }
     .card-catal{
-   
-    background: white;  
-    flex-wrap:wrap ;
-    width: 73%;
-    margin-left: 30px;
+      margin: 0 auto;
+      background: white;  
+      flex-wrap:wrap ;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 7px;
     &>img{
       width: 100%;
     }
@@ -1552,7 +1563,9 @@ span{
     margin-top: 20px;  
   }
 }
+.catalog{
 
+}
  
 
 
